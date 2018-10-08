@@ -3,7 +3,7 @@ var svgWidth = 960;
 var svgHeight = 500;
 
 var margin = {
-  top: 40,
+  top: 20,
   right: 40,
   bottom:100,
   left: 100
@@ -66,7 +66,7 @@ d3.csv("assets/data/data.csv").then(function(data) {
   // Setup the tool tip
   var tool_tip = d3.tip()
   .attr("class", "d3-tip")
-  .offset([-8, 0])
+  .offset([60, -70])
   .html(d =>`State: ${d.state}<br>${xData}: ${d[xData]}<br>${yData}: ${d[yData]}`);
   svg.call(tool_tip);
 
@@ -182,7 +182,7 @@ d3.csv("assets/data/data.csv").then(function(data) {
         d3.selectAll(".d3-tip").remove()
         var tool_tip = d3.tip()
         .attr("class", "d3-tip")
-        .offset([-8, 0])
+        .offset([60, -70])
         .html(d =>`State: ${d.state}<br>${xData}: ${d[xData]}<br>${yData}: ${d[yData]}`);
         svg.call(tool_tip);
 
@@ -240,7 +240,7 @@ d3.csv("assets/data/data.csv").then(function(data) {
 
          var tool_tip = d3.tip()
          .attr("class", "d3-tip")
-         .offset([-8, 0])
+         .offset([60, -70])
          .html(d =>`State: ${d.state}<br>${xData}: ${d[xData]}<br>${yData}: ${d[yData]}`);
          svg.call(tool_tip);
  
