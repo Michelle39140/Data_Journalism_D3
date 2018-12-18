@@ -8,7 +8,7 @@
 
 **Packages**: D3/js, d3-tip.js plugin developed by [Justin Palmer](https://github.com/Caged). **Framework**:bootstrap
 
-#
+---
 ### The webpage is live here: https://michelle39140.github.io/Data_Journalism_D3/
 Chart features:
 * with click events that allows users to select which data to display
